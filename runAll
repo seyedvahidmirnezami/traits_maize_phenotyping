@@ -1,0 +1,26 @@
+#!/bin/bash
+cd ..;
+
+h=2017;
+
+
+j=07;
+for i in {25..31};
+do
+cd $j$i$h;
+sbatch mainJobSide.sh;
+sleep 5s
+cd ..;
+done
+
+j=08;
+for i in {01,02,04,06,09,11,15,18,22,30};
+do
+cd $j$i$h;
+sbatch mainJobSide.sh;
+sleep 5s
+cd ..;
+done
+
+
+

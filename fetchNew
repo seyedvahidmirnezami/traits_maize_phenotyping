@@ -1,0 +1,47 @@
+#!/bin/bash
+j=07;
+h=2017;
+cd ..;
+for i in {25..31};
+do
+cd $j$i$h;
+rm -r resultAgronomy;
+rm -r excelWithYellow*;
+rm e_*;
+rm o_*;
+rm *.log;
+rm -r MatFiles;
+rm *.xlsx
+rm *.m
+cd ..;
+done
+j=08;
+for i in {01,02,04,06,09,11,15,18,22,30};
+do
+cd $j$i$h;
+rm -r resultAgronomy;
+rm -r excelWithYellow*;
+
+rm e_*;
+rm o_*;
+rm *.log;
+rm -r MatFiles;
+rm *.xlsx
+rm *.m
+cd ..;
+done
+
+j=09;
+i=08;
+cd $j$i$h;
+rm -r resultAgronomy;
+rm -r excelWithYellow*;
+
+rm e_*;
+rm o_*;
+rm *.log;
+rm -r MatFiles;
+rm *.xlsx
+rm *.m
+cd ..;
+
